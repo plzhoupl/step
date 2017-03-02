@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>案件流程图</title>
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <div class="container step">
+        <img src="image/head.png" alt=""/>
+        <div>
+            <ul class="steps">
+                <li class="nohover">不受理<span class="line_1"></span></li>
+                <li class="nohover">报案<span class="line_2"></span></li>
+                <li class="nohover">不需要调节</li>
+
+            </ul>
+            <ul class="steps" style="margin-left: 17.5em">
+                <li class="nohover">指派员调节<span class="line_3"></span></li>
+            </ul>
+            <ul class="steps" style="position: relative;margin-left: -33px">
+                <li class="nohover" style="float: left;">调解暂停<span class="line_1"></span></li>
+                <li class="nohover">受理中<span class="line_3"></span>
+                    <span class="line_2" style="margin-top: -14px"></span>
+                    <span class="line_2" style="margin-top: 17px"></span>
+                </li>
+                <li class="nohover" style="margin-top: -37px">调解延期</li>
+                <li style="position: absolute;margin-top: 36px;margin-left: 32em">不予调解</li>
+            </ul>
+            <ul class="steps nohover" style="margin-left: 17em">
+                <li>申请调解结案<span class="line_3"></span>
+                    <span class="line_2" style="margin-top: -14px"></span>
+                    <span class="line_1" style="margin-top: 17px"></span>
+                </li>
+                <li class="nohover">结案不通过</li>
+            </ul>
+            <ul class="steps" style="margin-left: 18em">
+                <li class="hover">结案通过<span class="line_3"></span></li>
+            </ul>
+            <ul class="steps" style="margin-left: 15.5em">
+                <li class="nohover">索赔服务中/服务中<span class="line_3"></span></li>
+            </ul>
+            <ul class="steps" style="margin-left: 18em">
+                <li class="nohover">索赔完成<span class="line_3"></span>
+                </li>
+            </ul>
+
+            <ul class="steps" style="margin-left: 17em">
+                <li class="nohover">保险结案申请<span class="line_3"></span>
+                    <span class="line_2" style="margin-top: -14px"></span>
+                    <span class="line_1" style="margin-top: 17px"></span>
+                </li>
+                <li class="nohover">保险结案不通过</li>
+            </ul>
+            <ul class="steps" style="margin-left: 18em">
+                <li class="nohover">保险结案<span class="line_3"></span></li>
+            </ul>
+        </div>
+        <hr/>
+        <p>说明：您查阅的绿色底标为当前该案件的节点，请知悉。</p>
+    </div>
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <script>
+        $('.steps>li').click(function(){
+            $('.steps>li').removeClass('hover');
+            if($(this).hasClass("hover")){
+                $(this).addClass('nohover').removeClass('hover');
+            }else{
+                $(this).addClass('hover').removeClass('nohover');
+            }
+        });
+    </script>
+</body>
+</html>

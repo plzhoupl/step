@@ -1,0 +1,82 @@
+body{
+    font-family: 'Microsoft YaHei';
+}
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0;
+}
+.step{
+    height: 2039px;
+    background: url("image/bg-logo.png");
+    text-align: center;
+    /*position: relative;*/
+}
+.step>img{
+    margin-top: 80px;
+}
+.steps{
+    display: block;
+    position: relative;
+    width: 1200px;
+    margin: 110px auto 0;
+    left: 15%;
+    float: left;
+}
+.steps li {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: #138ac1;
+    text-align: center;
+    position: relative;
+    float: left;
+    border: 5px #92c5d3 solid;
+    padding: 10px 25px;
+    margin-right: 190px;
+}
+/*Á¬½ÓÏß*/
+.steps li>span{
+    display: block;
+    width: 193px;
+    height: 20px;
+    position: absolute;
+    left: 100%;
+    top: 10px;
+}
+.steps:not(:first-child){
+    margin-left: 300px;
+}
+.steps li>span.line_1{
+    background: url("image/line_1.png") no-repeat ;
+}
+.steps li>span.line_2{
+    background: url("image/line_2.png") no-repeat;
+}
+.steps li>span.line_3{
+    width: 20px;
+    height: 193px;
+    background: url("image/line_3.png") no-repeat;
+    left: 42%;
+    top: -115px;
+}
+.step hr{
+    display: inline-block;
+    width: 1000px;
+    height:4px;
+    border:none;
+    border-top:4px dashed #dcdcdc;
+    margin: 100px 0 20px;
+}
+.step p{
+    color: #138ac1;
+    font-weight: 900;
+    margin-left: -37em;
+}
+.steps li.hover{
+    border: none;
+    background-color:#3DA06A;
+    color: #ffffff;
+    padding: 12px 30px;
+}
